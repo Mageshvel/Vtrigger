@@ -12,7 +12,7 @@ public class Homepage {
 	@FindBy(linkText ="Organizations")
 	private WebElement organizationLink;
 	
-	@FindBy(xpath = "//img[@src='themes/softed/images/user.PNG']")
+	@FindBy(xpath ="//td[@style='padding-right:0px;padding-left:10px;']")
 	private WebElement profileIcon;
 	
 	@FindBy(linkText = "Sign Out")

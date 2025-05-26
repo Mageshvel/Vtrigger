@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Contactpage {
-	@FindBy(linkText ="//img[@title='Create Contact...']")
+	@FindBy(xpath  ="//img[@alt='Create Contact...']")
 	private WebElement createIcon;
 	
 	@FindBy(name = "lastname")

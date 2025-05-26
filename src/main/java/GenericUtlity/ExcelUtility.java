@@ -19,7 +19,6 @@ public class ExcelUtility {
 		return wb.getSheet(sheetName).getRow(rowIndex).getCell(colIndex).getStringCellValue();
 
 
-
 	}
    public boolean getBooleanDataFromExcel(String sheetName,int rowIndex,int colIndex) throws EncryptedDocumentException, IOException {
 		
