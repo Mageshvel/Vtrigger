@@ -18,7 +18,7 @@ public class TC_VT_001_Test extends BaseClass {
 		ExtentTest test=eReport.createTest("clickOnContacts");
 		Homepage hp=new Homepage(driver);
 		hp.getContectsLink().click();
-		Assert.assertEquals(driver.getTitle(),"Administrator - Home - vtiger CRM 5 - Commercial Open Source CRM");
+		Assert.assertEquals(driver.getTitle(),"Administrator - Contacts - vtiger CRM 5 - Commercial Open Source CRM");
 		test.log(Status.PASS, "Contacts page is displayed");
 		
 	}

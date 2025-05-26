@@ -13,7 +13,7 @@ public class ExcelUtility {
 	
 	public String getStringDataFromExcel(String sheetName,int rowIndex,int colIndex) throws EncryptedDocumentException, IOException {
 		
-		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/TestScriptData.xlsx");
+		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/TestScriptData3.xlsx");
 		
 		Workbook wb = WorkbookFactory.create(fis);
 		return wb.getSheet(sheetName).getRow(rowIndex).getCell(colIndex).getStringCellValue();
@@ -22,7 +22,7 @@ public class ExcelUtility {
 	}
    public boolean getBooleanDataFromExcel(String sheetName,int rowIndex,int colIndex) throws EncryptedDocumentException, IOException {
 		
-		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/TestScriptData.xlsx");
+		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/TestScriptData3.xlsx");
 		
 		Workbook wb = WorkbookFactory.create(fis);
 		return wb.getSheet(sheetName).getRow(rowIndex).getCell(colIndex).getBooleanCellValue();
@@ -32,7 +32,7 @@ public class ExcelUtility {
 	}
    public double getNumberDataFromExcel(String sheetName,int rowIndex,int colIndex) throws EncryptedDocumentException, IOException {
 		
-		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/TestScriptData.xlsx");
+		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/TestScriptData3.xlsx");
 		
 		Workbook wb = WorkbookFactory.create(fis);
 		return wb.getSheet(sheetName).getRow(rowIndex).getCell(colIndex).getNumericCellValue();
@@ -43,7 +43,7 @@ public class ExcelUtility {
  
    public  LocalDateTime getLocalDateTimeDataFromExcel(String sheetName,int rowIndex,int colIndex) throws EncryptedDocumentException, IOException {
 		
-		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/TestScriptData.xlsx");
+		FileInputStream fis=new FileInputStream("./src/test/resources/TestData/TestScriptData3.xlsx");
 		
 		Workbook wb = WorkbookFactory.create(fis);
 		return wb.getSheet(sheetName).getRow(rowIndex).getCell(colIndex).getLocalDateTimeCellValue();

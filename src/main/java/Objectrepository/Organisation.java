@@ -12,8 +12,12 @@ public class Organisation {
 	@FindBy(name="accountname")
 	private WebElement organisationTextField;
 	
+	
 	@FindBy(xpath = "//input[@title='Save [Alt+S]']")
 	private WebElement saveButton;
+	
+	@FindBy(xpath ="//span[@class='dvHeaderText']")
+	private WebElement headerField;
 	
 	public Organisation(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -32,6 +36,10 @@ public class Organisation {
 
 	public WebElement getSaveButton() {
 		return saveButton;
+	}
+
+	public WebElement getHeaderField() {
+		return headerField;
 	}
 	
 
