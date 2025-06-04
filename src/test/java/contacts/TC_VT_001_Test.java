@@ -20,7 +20,7 @@ public class TC_VT_001_Test extends BaseClass {
 		hp.getContectsLink().click();
 		Assert.assertEquals(driver.getTitle(),"Administrator - Contacts - vtiger CRM 5 - Commercial Open Source CRM");
 		test.log(Status.PASS, "Contacts page is displayed");
-		
+		test.log(Status.FAIL,"cONTCTS IS NOT dISPLAYED");
 	}
 
 }
